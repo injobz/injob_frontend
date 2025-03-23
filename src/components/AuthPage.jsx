@@ -1,107 +1,64 @@
-import { useState } from "react";
-
+import React from "react";
+import image from "../img/image.png";
 const AuthPage = () => {
-  const [isLogin, setIsLogin] = useState(true);
-
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100">
-      {/* Navbar */}
-      <nav className="w-full bg-white shadow p-4 flex justify-between items-center">
-        <div className="text-lg font-bold">inJob</div>
-        <div className="flex space-x-4">
-          <a href="#" className="text-gray-600 hover:underline">
-            Features
-          </a>
-          <a href="#" className="text-gray-600 hover:underline">
-            How it Works
-          </a>
-          <a href="#" className="text-gray-600 hover:underline">
-            Pricing
-          </a>
-        </div>
-        <a href="#" className="text-gray-600 hover:underline">
-          Back to Home
-        </a>
-      </nav>
+    <div className="flex h-screen">
+      {/* Left Side - Login Form */}
+      <div className="w-1/2 flex flex-col justify-center items-center p-8">
+        <h1 className="text-3xl font-bold text-gray-800 mb-2">InJob</h1>
+        <h2 className="text-2xl font-semibold mb-4">Welcome back</h2>
+        <p className="text-gray-500 mb-6">Please enter your details</p>
 
-      {/* Auth Box */}
-      <div className="bg-white p-8 rounded shadow-md w-96 mt-6">
-        {/* Toggle Login/Register */}
-        <div className="flex justify-between mb-4 border-b pb-2">
-          <button
-            className={`px-4 py-2 ${
-              isLogin ? "font-bold border-b-2 border-black" : ""
-            }`}
-            onClick={() => setIsLogin(true)}
-          >
-            Login
-          </button>
-          <button
-            className={`px-4 py-2 ${
-              !isLogin ? "font-bold border-b-2 border-black" : ""
-            }`}
-            onClick={() => setIsLogin(false)}
-          >
-            Register
-          </button>
-        </div>
+        <form className="w-3/4">
+          <label className="block mb-2 text-gray-600">Email address</label>
+          <input
+            type="email"
+            className="w-full p-3 border border-gray-300 rounded-lg mb-4"
+            placeholder="Enter your email"
+          />
 
-        <h2 className="text-2xl font-semibold text-center mb-4">
-          {isLogin ? "Welcome Back" : "Create an Account"}
-        </h2>
-        <p className="text-gray-600 text-center mb-6">
-          {isLogin
-            ? "Sign in to your account to continue"
-            : "Register to get started"}
-        </p>
+          <label className="block mb-2 text-gray-600">Password</label>
+          <input
+            type="password"
+            className="w-full p-3 border border-gray-300 rounded-lg mb-4"
+            placeholder="Enter your password"
+          />
 
-        {/* Form Fields */}
-        <form>
-          {!isLogin && (
-            <div className="mb-4">
-              <label className="block text-gray-700">Full Name</label>
-              <input
-                type="text"
-                placeholder="Enter your full name"
-                className="w-full p-2 border rounded mt-1"
-              />
+          <div className="flex justify-between items-center mb-4">
+            <div>
+              <input type="checkbox" className="mr-2" />
+              <span className="text-gray-600">Remember for 30 days</span>
             </div>
-          )}
-          <div className="mb-4">
-            <label className="block text-gray-700">Email</label>
-            <input
-              type="email"
-              placeholder="Enter your email address"
-              className="w-full p-2 border rounded mt-1"
-            />
-          </div>
-          <div className="mb-4">
-            <label className="block text-gray-700">Password</label>
-            <input
-              type="password"
-              placeholder="Enter your password"
-              className="w-full p-2 border rounded mt-1"
-            />
-          </div>
-          {!isLogin && (
-            <div className="mb-4">
-              <label className="block text-gray-700">Confirm Password</label>
-              <input
-                type="password"
-                placeholder="Confirm your password"
-                className="w-full p-2 border rounded mt-1"
-              />
-            </div>
-          )}
-          {isLogin && (
-            <a href="#" className="text-blue-500 text-sm float-right mb-4">
-              Forgot Password?
+            <a href="#" className="text-purple-600 font-semibold">
+              Forgot password?
             </a>
-          )}
-          <button className="w-full bg-teal-500 text-white p-2 rounded hover:bg-teal-600">
-            {isLogin ? "Sign In" : "Register"}
+          </div>
+
+          <button className="w-full bg-purple-600 text-white p-3 rounded-lg font-semibold mb-4">
+            Sign in
+          </button>
+
+          <button className="w-full border p-3 rounded-lg flex items-center justify-center">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png"
+              alt="Google Logo"
+              className="w-5 h-5 mr-2"
+            />
+            Sign in with Google
           </button>
         </form>
+
+        <p className="text-gray-600 mt-6">
+          Don't have an account?{" "}
+          <a href="#" className="text-purple-600 font-semibold">
+            Sign up
+          </a>
+        </p>
+      </div>
+
+      {/* Right Side - Illustration */}
+      <div className="w-1/2 bg-purple-200 flex justify-center items-center">
+        <img src={image} alt="Illustration" className="w-3/4" />
       </div>
     </div>
   );

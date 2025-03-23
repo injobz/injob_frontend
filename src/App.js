@@ -14,10 +14,10 @@ function App() {
     <Router>
       {/* <Navbar /> Keep Navbar on all pages */}
       <Routes>
-        <Route path="/" element={<JobLandingPage />} />
+        <Route path="/" element={<AuthPage />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/jobid" element={<JobDetail />} />
-        <Route path="/auth" element={<AuthPage />} />
+        <Route path="/auth" element={<JobLandingPage />} />
         <Route path="/resume-upload" element={<ResumeUpload />} />
         <Route path="/account-settings" element={<AccountSetting />} />
         <Route
