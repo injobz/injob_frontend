@@ -6,7 +6,7 @@ const AuthPage = () => {
       {/* Left Side - Login Form */}
       <div className="w-1/2 flex flex-col justify-center items-center p-8">
         <h1 className="text-3xl font-bold text-gray-800 mb-2">InJob</h1>
-        <h2 className="text-2xl font-semibold mb-4">Welcome back</h2>
+        <h2 className="text-3xl font-semibold mb-4">Welcome back</h2>
         <p className="text-gray-500 mb-6">Please enter your details</p>
 
         <form className="w-3/4">
@@ -29,12 +29,12 @@ const AuthPage = () => {
               <input type="checkbox" className="mr-2" />
               <span className="text-gray-600">Remember for 30 days</span>
             </div>
-            <a href="#" className="text-purple-600 font-semibold">
+            <a href="#" className="text--600 font-semibold">
               Forgot password?
             </a>
           </div>
 
-          <button className="w-full bg-purple-600 text-white p-3 rounded-lg font-semibold mb-4">
+          <button className="w-full bg-blue-600 text-white p-3 rounded-lg font-semibold mb-4">
             Sign in
           </button>
 
@@ -50,14 +50,14 @@ const AuthPage = () => {
 
         <p className="text-gray-600 mt-6">
           Don't have an account?{" "}
-          <a href="#" className="text-purple-600 font-semibold">
+          <a href="#" className="text-blue-600 font-semibold">
             Sign up
           </a>
         </p>
       </div>
 
       {/* Right Side - Illustration */}
-      <div className="w-1/2 bg-purple-200 flex justify-center items-center">
+      <div className="w-3/5 bg-purple-200 flex justify-center items-center">
         <img src={image} alt="Illustration" className="w-3/4" />
       </div>
     </div>
