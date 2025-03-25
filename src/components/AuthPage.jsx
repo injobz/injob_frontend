@@ -1,11 +1,12 @@
 import React from "react";
 import image from "../img/image.png";
+import logo from "../img/logo.png";
 const AuthPage = () => {
   return (
     <div className="flex h-screen">
       {/* Left Side - Login Form */}
       <div className="w-1/2 flex flex-col justify-center items-center p-8">
-        <h1 className="text-3xl font-bold text-gray-800 mb-2">InJob</h1>
+        <img src={logo} alt="logo" className="w-50" />
         <h2 className="text-3xl font-semibold mb-4">Welcome back</h2>
         <p className="text-gray-500 mb-6">Please enter your details</p>
 
@@ -13,7 +14,7 @@ const AuthPage = () => {
           <label className="block mb-2 text-gray-600">Email address</label>
           <input
             type="email"
-            className="w-full p-3 border border-gray-300 rounded-lg mb-4"
+            className="w-full p-3 border border-gray-500 rounded-lg mb-4"
             placeholder="Enter your email"
           />
 
