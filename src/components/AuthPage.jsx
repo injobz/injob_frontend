@@ -40,7 +40,7 @@ const AuthPage = () => {
 
           <button className="w-full border p-3 rounded-lg flex items-center justify-center">
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png"
+              src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg"
               alt="Google Logo"
               className="w-5 h-5 mr-2"
             />
@@ -57,8 +57,12 @@ const AuthPage = () => {
       </div>
 
       {/* Right Side - Illustration */}
-      <div className="w-3/5 bg-purple-200 flex justify-center items-center">
-        <img src={image} alt="Illustration" className="w-3/4" />
+      <div className="w-1/2 h-screen bg-purple-200 flex justify-center items-center">
+        <img
+          src={image}
+          alt="Illustration"
+          className="w-full h-full object-cover"
+        />
       </div>
     </div>
   );
