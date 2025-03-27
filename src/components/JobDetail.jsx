@@ -10,9 +10,7 @@ const JobDetail = () => {
           <button className="px-4 py-2 bg-purple-600 text-white rounded-md">
             Login
           </button>
-          <button className="ml-2 px-4 py-2 bg-purple-500 text-white rounded-md">
-            Post a Job
-          </button>
+          <button className="ml-2 px-4 py-2 bg-purple-500 text-white rounded-md"></button>
         </div>
       </nav>
 
