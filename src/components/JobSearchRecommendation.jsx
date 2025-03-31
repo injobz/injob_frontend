@@ -17,7 +17,6 @@ const JobSearchRecommendation = () => {
         </div>
       </nav>
 
-      {/* Search Section */}
       <div className="mt-6 max-w-3xl mx-auto">
         <h1 className="text-2xl font-bold text-center">
           Find Your Perfect Job
