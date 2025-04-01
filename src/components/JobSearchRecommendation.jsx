@@ -3,7 +3,6 @@ import React from "react";
 const JobSearchRecommendation = () => {
   return (
     <div className="p-6 bg-gray-50 min-h-screen">
-      {/* Navbar */}
       <nav className="flex justify-between items-center p-4 bg-white shadow-sm">
         <div className="text-xl font-bold">inJob</div>
         <div className="space-x-4">
