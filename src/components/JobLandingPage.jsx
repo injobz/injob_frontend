@@ -9,10 +9,7 @@ const JobLandingPage = () => {
           Find Your Dream Job With AI-Powered Recommendations
         </h1>
         {/* landing  page is main higlight of company */}
-        <p className="text-gray-600 mt-4">
-          Let our AI match you with job opportunities tailored to your skills
-          and experience.
-        </p>
+        
         <button className="mt-6 px-6 py-3 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700">
           Get Started
         </button>
