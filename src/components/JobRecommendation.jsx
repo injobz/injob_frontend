@@ -71,9 +71,6 @@ const JobRecommendation = () => {
           </div>
         ))}
       </div>
-      <button className="mt-4 bg-gray-300 text-black px-6 py-2 rounded w-full">
-        Load More
-      </button>
     </div>
   );
 };
