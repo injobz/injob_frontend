@@ -10,9 +10,6 @@ const JobSearchRecommendation = () => {
           <button className="bg-green-500 text-white px-4 py-2 rounded">
             Login
           </button>
-          <button className="bg-blue-500 text-white px-4 py-2 rounded">
-            Post a Job
-          </button>
         </div>
       </nav>
 
