@@ -76,5 +76,5 @@ const JobRecommendation = () => {
 };
 // done done
 //doing new thing i donot know i will be regular i dont know when ?
-
+// idk
 export default JobRecommendation;
