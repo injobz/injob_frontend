@@ -2,16 +2,14 @@ import React from "react";
 import bgocean from "../img/bgocean.webp";
 import Jobsearch from "../img/Jobsearch.webp";
 import oneclick from "../img/oneclick.jpg";
+import logo from "../img/logo.png";
 const JobLandingPage = () => {
   return (
     <div className="font-[Poppins]">
       {/* Navbar */}
       <nav className="flex justify-between items-center p-4 shadow-sm">
         <div className="flex items-center gap-2 text-xl font-bold text-blue-600">
-          <div className="w-4 h-4 bg-pink-500 rounded-full" />
-          <div className="w-4 h-4 bg-green-500 rounded-full" />
-          <div className="w-4 h-4 bg-purple-500 rounded-full" />
-          <span>inJob</span>
+          <img src={logo} alt="logo" className="w-10 mb-6" />
         </div>
         <ul className="flex gap-6 text-2xl font-medium">
           <li className="text-blue-600 border-b-2 border-blue-600">
@@ -219,70 +217,92 @@ const JobLandingPage = () => {
       </section>
 
       {/* Join Section */}
-      <section className="text-center py-20 px-6 bg-gray-50">
-        <h2 className="text-3xl font-bold mb-4">Join inJob Today!</h2>
-        <input
-          type="email"
-          placeholder="example@email.com"
-          className="px-4 py-2 border rounded w-full max-w-md mb-4"
-        />
-        <input
-          type="password"
-          placeholder="********"
-          className="px-4 py-2 border rounded w-full max-w-md mb-4"
-        />
-        <br />
-        <button className="px-6 py-2 bg-blue-600 text-white rounded">
-          Get Started
-        </button>
+      <section className="py-20 px-6 bg-white flex flex-col items-center text-center">
+        <h2 className="text-5xl font-bold mb-6 text-gray-800">
+          Join inJob Today!
+        </h2>
+        <p className="text-xl text-gray-600 mb-10 max-w-2xl">
+          Sign up to discover personalized job opportunities and simplify your
+          career journey.
+        </p>
+
+        <form className="w-full max-w-xl flex flex-col gap-6">
+          <input
+            type="email"
+            placeholder="example@email.com"
+            className="px-6 py-4 border border-gray-300 rounded-lg w-full text-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <input
+            type="password"
+            placeholder="********"
+            className="px-6 py-4 border border-gray-300 rounded-lg w-full text-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <button
+            type="submit"
+            className="px-6 py-4 bg-blue-600 text-white text-lg font-semibold rounded-lg hover:bg-blue-700 transition duration-300"
+          >
+            Get Started
+          </button>
+        </form>
       </section>
 
       {/* Footer */}
-      <footer className="bg-white p-10 text-center border-t">
-        <div className="flex justify-center items-center gap-2 text-xl font-bold text-blue-600 mb-6">
+      <footer className="bg-white px-10 py-20 text-center border-t border-gray-200">
+        {/* Logo Section */}
+        <div className="flex justify-center items-center gap-3 text-4xl font-extrabold text-blue-600 mb-10">
           <div className="w-3 h-3 bg-pink-500 rounded-full" />
           <div className="w-3 h-3 bg-green-500 rounded-full" />
           <div className="w-3 h-3 bg-purple-500 rounded-full" />
           <span>inJob</span>
         </div>
 
-        <div className="mb-4">
+        {/* Subscribe Section */}
+        <div className="mb-10 flex flex-col sm:flex-row justify-center items-center gap-4">
           <input
             type="email"
-            placeholder="Input your email"
-            className="px-4 py-2 border rounded w-64 mr-2"
+            placeholder="Enter your email"
+            className="px-6 py-3 border border-gray-300 rounded-lg w-full max-w-sm text-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
-          <button className="px-4 py-2 bg-blue-600 text-white rounded">
+          <button className="px-6 py-3 bg-blue-600 text-white text-xl font-medium rounded-lg hover:bg-blue-700 transition duration-300">
             Subscribe
           </button>
         </div>
 
-        <div className="grid md:grid-cols-4 gap-6 mt-6 text-sm text-gray-600">
+        {/* Footer Links Grid */}
+        <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-10 mt-10 text-left justify-items-center text-base text-gray-700">
           <div>
-            <p className="font-semibold mb-2">Product</p>
-            <p>Features</p>
-            <p>Pricing</p>
+            <p className="font-semibold text-2xl mb-3 text-gray-800">Product</p>
+            <p className="hover:text-blue-600 cursor-pointer">Features</p>
+            <p className="hover:text-blue-600 cursor-pointer">Pricing</p>
           </div>
           <div>
-            <p className="font-semibold mb-2">Resources</p>
-            <p>Blog</p>
-            <p>User Guides</p>
-            <p>Webinars</p>
+            <p className="font-semibold text-2xl mb-3 text-gray-800">
+              Resources
+            </p>
+            <p className="hover:text-blue-600 cursor-pointer">Blog</p>
+            <p className="hover:text-blue-600 cursor-pointer">User Guides</p>
+            <p className="hover:text-blue-600 cursor-pointer">Webinars</p>
           </div>
           <div>
-            <p className="font-semibold mb-2">Company</p>
-            <p>About Us</p>
-            <p>Contact</p>
+            <p className="font-semibold text-2xl mb-3 text-gray-800">Company</p>
+            <p className="hover:text-blue-600 cursor-pointer">About Us</p>
+            <p className="hover:text-blue-600 cursor-pointer">Contact</p>
           </div>
           <div>
-            <p className="font-semibold mb-2">Plans & Pricing</p>
-            <p>Startup</p>
-            <p>Organization</p>
+            <p className="font-semibold text-2xl mb-3 text-gray-800">
+              Plans & Pricing
+            </p>
+            <p className="hover:text-blue-600 cursor-pointer">Startup</p>
+            <p className="hover:text-blue-600 cursor-pointer">Organization</p>
           </div>
         </div>
 
-        <p className="text-xs mt-8 text-gray-400">
-          © 2024 Brand, Inc. • Privacy • Terms • Sitemap
+        {/* Copyright */}
+        <p className="text-sm mt-14 text-gray-500">
+          © 2025 inJob, Inc. •{" "}
+          <span className="hover:text-blue-500 cursor-pointer">Privacy</span> •{" "}
+          <span className="hover:text-blue-500 cursor-pointer">Terms</span> •{" "}
+          <span className="hover:text-blue-500 cursor-pointer">Sitemap</span>
         </p>
       </footer>
     </div>
