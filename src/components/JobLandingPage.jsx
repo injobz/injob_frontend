@@ -9,7 +9,7 @@ const JobLandingPage = () => {
       {/* Navbar */}
       <nav className="flex justify-between items-center p-4 shadow-sm">
         <div className="flex items-center gap-2 text-xl font-bold text-blue-600">
-          <img src={logo} alt="logo" className="w-10 mb-6" />
+          <img src={logo} alt="logo" className="w-[160px] mb-6" />
         </div>
         <ul className="flex gap-6 text-2xl font-medium">
           <li className="text-blue-600 border-b-2 border-blue-600">
@@ -249,11 +249,8 @@ const JobLandingPage = () => {
       {/* Footer */}
       <footer className="bg-white px-10 py-20 text-center border-t border-gray-200">
         {/* Logo Section */}
-        <div className="flex justify-center items-center gap-3 text-4xl font-extrabold text-blue-600 mb-10">
-          <div className="w-3 h-3 bg-pink-500 rounded-full" />
-          <div className="w-3 h-3 bg-green-500 rounded-full" />
-          <div className="w-3 h-3 bg-purple-500 rounded-full" />
-          <span>inJob</span>
+        <div className="flex justify-center items-center mb-10">
+          <img src={logo} alt="logo" className="w-[160px] mb-4" />
         </div>
 
         {/* Subscribe Section */}
@@ -261,44 +258,110 @@ const JobLandingPage = () => {
           <input
             type="email"
             placeholder="Enter your email"
-            className="px-6 py-3 border border-gray-300 rounded-lg w-full max-w-sm text-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="px-6 py-3 border border-gray-300 rounded-lg w-full max-w-sm text-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
           <button className="px-6 py-3 bg-blue-600 text-white text-xl font-medium rounded-lg hover:bg-blue-700 transition duration-300">
             Subscribe
           </button>
         </div>
 
+        {/* About Section */}
+        <div className="max-w-2xl mx-auto text-gray-700 text-base mb-10 text-xl">
+          <p>
+            <strong>inJob</strong> connects talent with opportunity. Whether
+            you're looking for your first job or your next big role, our
+            platform is designed to help you succeed.
+          </p>
+        </div>
+
+        {/* Social Icons */}
+        <div className="flex justify-center gap-6 mb-10 text-gray-500">
+          <a href="#" aria-label="LinkedIn" className="hover:text-blue-600">
+            <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M4.98 3.5c0 1.38-1.1 2.5-2.48 2.5S0 4.88 0 3.5 1.1 1 2.5 1 4.98 2.12 4.98 3.5zM.23 8.5h4.56V24H.23V8.5zm7.89 0h4.37v2.1h.06c.61-1.16 2.11-2.37 4.34-2.37 4.64 0 5.49 3.05 5.49 7.01V24h-4.57v-6.86c0-1.63-.03-3.73-2.28-3.73-2.29 0-2.64 1.78-2.64 3.61V24h-4.57V8.5z" />
+            </svg>
+          </a>
+          <a href="#" aria-label="Twitter" className="hover:text-blue-600">
+            <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5.5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
+            </svg>
+          </a>
+          <a href="#" aria-label="Instagram" className="hover:text-blue-600">
+            <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M7.75 2A5.75 5.75 0 002 7.75v8.5A5.75 5.75 0 007.75 22h8.5A5.75 5.75 0 0022 16.25v-8.5A5.75 5.75 0 0016.25 2h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm6.5-.25a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5zM12 9a3 3 0 100 6 3 3 0 000-6z" />
+            </svg>
+          </a>
+        </div>
+
         {/* Footer Links Grid */}
         <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-10 mt-10 text-left justify-items-center text-base text-gray-700">
           <div>
-            <p className="font-semibold text-2xl mb-3 text-gray-800">Product</p>
-            <p className="hover:text-blue-600 cursor-pointer">Features</p>
-            <p className="hover:text-blue-600 cursor-pointer">Pricing</p>
+            <p className="font-semibold text-3xl mb-3 text-gray-800">Product</p>
+            <p className="hover:text-blue-600 cursor-pointer text-xl">
+              Features
+            </p>
+            <p className="hover:text-blue-600 cursor-pointer text-xl">
+              Pricing
+            </p>
           </div>
           <div>
-            <p className="font-semibold text-2xl mb-3 text-gray-800">
+            <p className="font-semibold text-3xl mb-3 text-gray-800">
               Resources
             </p>
-            <p className="hover:text-blue-600 cursor-pointer">Blog</p>
-            <p className="hover:text-blue-600 cursor-pointer">User Guides</p>
-            <p className="hover:text-blue-600 cursor-pointer">Webinars</p>
-          </div>
-          <div>
-            <p className="font-semibold text-2xl mb-3 text-gray-800">Company</p>
-            <p className="hover:text-blue-600 cursor-pointer">About Us</p>
-            <p className="hover:text-blue-600 cursor-pointer">Contact</p>
-          </div>
-          <div>
-            <p className="font-semibold text-2xl mb-3 text-gray-800">
-              Plans & Pricing
+            <p className="hover:text-blue-600 cursor-pointer text-xl">Blog</p>
+            <p className="hover:text-blue-600 cursor-pointer text-xl">
+              User Guides
             </p>
-            <p className="hover:text-blue-600 cursor-pointer">Startup</p>
-            <p className="hover:text-blue-600 cursor-pointer">Organization</p>
+            <p className="hover:text-blue-600 cursor-pointer text-xl">
+              Webinars
+            </p>
+          </div>
+          <div>
+            <p className="font-semibold text-3xl mb-3 text-gray-800">Company</p>
+            <p className="hover:text-blue-600 cursor-pointer text-xl">
+              About Us
+            </p>
+            <p className="hover:text-blue-600 cursor-pointer text-xl">
+              Contact
+            </p>
+          </div>
+          <div>
+            <p className="font-semibold text-3xl mb-3 text-gray-800 text-xl">
+              Plans
+            </p>
+            <p className="hover:text-blue-600 cursor-pointer text-xl">
+              Startup
+            </p>
+            <p className="hover:text-blue-600 cursor-pointer text-xl">
+              Organization
+            </p>
           </div>
         </div>
 
+        {/* App Download Buttons */}
+        <div className="mt-14 flex flex-col sm:flex-row justify-center gap-4">
+          <a
+            href="#"
+            className="bg-black text-white px-4 py-3 rounded-lg flex items-center gap-2 hover:bg-gray-800"
+          >
+            <svg className="w-8 h-8" fill="white" viewBox="0 0 384 512">
+              <path d="M318.7 268.7c-2.8-23.3 6.6-45.3 24.4-61.4-22.5-33.5-57.1-52.5-103.3-55.2-43.5-2.6-90.5 25.8-108.5 25.8-18 0-60.2-25.1-93.5-25.1-47.8 0-87.3 27.8-111.1 76.7C-7.6 324.7 62.4 424 113.4 424c30.5 0 53.6-22.8 94.3-22.8s61.2 22.8 94.3 22.8c52.1 0 97.6-76.6 83.1-132.1zM267.3 64c0-33.6-25.5-61-57-61s-57 27.4-57 61c0 33.7 25.4 60.9 57 60.9s57-27.2 57-60.9z" />
+            </svg>
+            <span className="text-xl">Download on Play Store</span>
+          </a>
+          <a
+            href="#"
+            className="bg-black text-white px-4 py-3 rounded-lg flex items-center gap-2 hover:bg-gray-800"
+          >
+            <svg className="w-8 h-8" fill="white" viewBox="0 0 384 512">
+              <path d="M318.7 268.7c-2.8-23.3 6.6-45.3 24.4-61.4-22.5-33.5-57.1-52.5-103.3-55.2-43.5-2.6-90.5 25.8-108.5 25.8-18 0-60.2-25.1-93.5-25.1-47.8 0-87.3 27.8-111.1 76.7C-7.6 324.7 62.4 424 113.4 424c30.5 0 53.6-22.8 94.3-22.8s61.2 22.8 94.3 22.8c52.1 0 97.6-76.6 83.1-132.1zM267.3 64c0-33.6-25.5-61-57-61s-57 27.4-57 61c0 33.7 25.4 60.9 57 60.9s57-27.2 57-60.9z" />
+            </svg>
+            <span className="text-xl">Download on App Store</span>
+          </a>
+        </div>
+
         {/* Copyright */}
-        <p className="text-sm mt-14 text-gray-500">
+        <p className="text-sm mt-10 text-gray-500">
           © 2025 inJob, Inc. •{" "}
           <span className="hover:text-blue-500 cursor-pointer">Privacy</span> •{" "}
           <span className="hover:text-blue-500 cursor-pointer">Terms</span> •{" "}
