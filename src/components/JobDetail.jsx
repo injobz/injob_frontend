@@ -16,7 +16,7 @@ const JobDetail = () => {
 
       <div className="mt-6">
         <h2 className="text-3xl font-bold">Senior UX Designer</h2>
-        <p className="text-gray-600">TechCorp Inc. - San Francisco, CA</p>
+        <p className="text-gray-600">TechCorp Inc.  San Francisco, CA</p>
       </div>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-6">
