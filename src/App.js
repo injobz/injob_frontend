@@ -7,16 +7,16 @@ import ResumeUpload from "./components/ResumeUpload";
 import AccountSetting from "./components/AccountSetting";
 import JobSearchRecommendation from "./components/JobSearchRecommendation";
 import JobRecommendation from "./components/JobRecommendation";
-// import Navbar from "./components/Navbar"; // If you have a Navbar
+import MessagePage from "./components/MessagePage";
 
 function App() {
   return (
     <Router>
-      {/* <Navbar /> Keep Navbar on all pages */}
+
       <Routes>
         <Route path="/" element={<AuthPage />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/jobid" element={<JobDetail />} />
+        <Route path="/box" element={<MessagePage />} />
         <Route path="/auth" element={<JobLandingPage />} />
         <Route path="/resume-upload" element={<ResumeUpload />} />
         <Route path="/account-settings" element={<AccountSetting />} />
