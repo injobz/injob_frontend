@@ -6,7 +6,7 @@ const JobDetail = () => {
       <nav className="flex justify-between items-center py-4 border-b">
         <h1 className="text-2xl font-bold">InJob</h1>
         <div>
-          <button className="px-4 py-2 border rounded-md mr-2">Register</button>
+          <button className="px-4 py-2 border rounded-md mr-2">register</button>
           <button className="px-4 py-2 bg-purple-600 text-white rounded-md">
             Login
           </button>
@@ -15,7 +15,7 @@ const JobDetail = () => {
       </nav>
 
       <div className="mt-6">
-        <h2 className="text-3xl font-bold">Senior UX Designer</h2>
+        <h2 className="text-3xl font-bold">Senior uX Designer</h2>
         <p className="text-gray-600">TechCorp Inc.  San Francisco, CA</p>
       </div>
 
