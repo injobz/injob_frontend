@@ -8,13 +8,15 @@ import AccountSetting from "./components/AccountSetting";
 import JobSearchRecommendation from "./components/JobSearchRecommendation";
 import JobRecommendation from "./components/JobRecommendation";
 import MessagePage from "./components/MessagePage";
+import SignupPage from "./components/SignupPage";
 
 function App() {
   return (
     <Router>
-
       <Routes>
-        <Route path="/" element={<AuthPage />} />
+        <Route path="/" element={<JobLandingPage />} />
+        <Route path="/login" element={<AuthPage />} />
+        <Route path="/signup" element={<SignupPage />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/box" element={<MessagePage />} />
         <Route path="/auth" element={<JobLandingPage />} />

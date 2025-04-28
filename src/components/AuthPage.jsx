@@ -1,6 +1,7 @@
 import React from "react";
 import image from "../img/image.png";
 import logo from "../img/logo.png";
+import { Link } from "react-router-dom";
 
 const AuthPage = () => {
   return (
@@ -57,9 +58,12 @@ const AuthPage = () => {
 
         <p className="text-gray-600 mt-6 text-xl">
           Don't have an account?{" "}
-          <a href="#" className="text-blue-600 hover:underline font-medium">
+          <Link
+            to="/signup"
+            className="text-blue-600 hover:underline font-medium"
+          >
             Sign up
-          </a>
+          </Link>
         </p>
       </div>
 
