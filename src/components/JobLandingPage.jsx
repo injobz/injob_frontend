@@ -3,23 +3,12 @@ import bgocean from "../img/bgocean.webp";
 import Jobsearch from "../img/Jobsearch.webp";
 import oneclick from "../img/oneclick.jpg";
 import logo from "../img/logo.png";
+import Navbar from "./Navbar";
 const JobLandingPage = () => {
   return (
     <div className="font-[Poppins]">
       {/* Navbar */}
-      <nav className="flex justify-between items-center p-4 shadow-sm">
-        <div className="flex items-center gap-2 text-xl font-bold text-blue-600">
-          <img src={logo} alt="logo" className="w-[160px] mb-6" />
-        </div>
-        <ul className="flex gap-6 text-2xl font-medium">
-          <li className="text-blue-600 border-b-2 border-blue-600">
-            How It Works
-          </li>
-          <li className="hover:text-blue-600">Features</li>
-          <li className="hover:text-blue-600">Testimonials</li>
-        </ul>
-        <div className="text-gray-600 text-3xl h-8 cursor-pointer">🔍</div>
-      </nav>
+      <Navbar />
 
       {/* Hero Section */}
       <section
