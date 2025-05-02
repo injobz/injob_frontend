@@ -40,7 +40,7 @@ const AccountSetting = () => {
           rows="3"
         ></textarea>
 
-        <h3 className="text-xl font-medium">Profile Picture</h3>
+        <h2 className="text-xl font-medium">Profile Picture</h2>
         <div className="border p-3 rounded flex items-center justify-between">
           <span>Current Photo</span>
           <div>
