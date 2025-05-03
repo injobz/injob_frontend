@@ -87,7 +87,7 @@ const AccountSetting = () => {
             Save Changes
           </button>
           <button className="bg-gray-500 text-white px-4 py-2 rounded">
-            Logout
+            Logouts
           </button>
         </div>
       </div>
