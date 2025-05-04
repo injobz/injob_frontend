@@ -41,7 +41,7 @@ const Navbar = () => {
 
         {/* Profile section with menu and avatar */}
         <Link
-          to="/profilr"
+          to="/profile"
           className="relative flex items-center gap-2 cursor-pointer border px-2 py-1 rounded-full"
         >
           {/* Menu Icon */}
