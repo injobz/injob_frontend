@@ -1,16 +1,44 @@
-import React from "react";
+import React, { useRef } from "react"; // Added useRef
 import bgocean from "../img/bgocean.webp";
 import Jobsearch from "../img/Jobsearch.webp";
 import oneclick from "../img/oneclick.jpg";
 import logo from "../img/logo.png";
 import Navbar from "./Navbar";
+import { Link } from "react-router-dom";
+
 const JobLandingPage = () => {
+  // Add file input ref
+  const fileInputRef = useRef(null);
+
+  // Handle upload button click
+  const handleUploadClick = () => {
+    fileInputRef.current.click();
+  };
+
+  // Handle file selection
+  const handleFileUpload = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      // Here you can handle the file upload
+      alert(`Uploaded file: ${file.name}`);
+    }
+  };
+
   return (
     <div className="font-[Poppins]">
+      {/* Add hidden file input */}
+      <input
+        type="file"
+        ref={fileInputRef}
+        onChange={handleFileUpload}
+        className="hidden"
+        accept=".pdf,.doc,.docx,.txt"
+      />
+
       {/* Navbar */}
       <Navbar />
 
-      {/* Hero Section */}
+      {/* Hero Section - Added onClick handler */}
       <section
         className="text-center h-[50vh] bg-cover bg-center flex flex-col justify-center items-center"
         style={{ backgroundImage: `url(${bgocean})` }}
@@ -21,7 +49,10 @@ const JobLandingPage = () => {
         <p className="text-white mt-2 text-2xl ">
           inJob uses AI to match your resume with the perfect opportunities
         </p>
-        <button className="text-xl mt-4 px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
+        <button
+          onClick={handleUploadClick} // Added click handler
+          className="text-xl mt-4 px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+        >
           Upload Resume
         </button>
       </section>
@@ -99,9 +130,11 @@ const JobLandingPage = () => {
               </ul>
             </div>
             <div className="flex gap-4 mt-6">
-              <button className="text-xl px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700 transition duration-300">
-                Try now
-              </button>
+              <Link to="/Job-list">
+                <button className="text-xl px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700 transition duration-300">
+                  Try now
+                </button>
+              </Link>
               <button className="text-xl px-6 py-3 border border-blue-600 text-blue-600 rounded hover:bg-blue-50 transition duration-300">
                 Learn more
               </button>
@@ -143,9 +176,12 @@ const JobLandingPage = () => {
               </ul>
             </div>
             <div className="flex gap-4 mt-6">
-              <button className="text-xl px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700 transition duration-300">
-                Try now
-              </button>
+              <Link to="/Job-list">
+                <button className="text-xl px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700 transition duration-300">
+                  Try now
+                </button>
+              </Link>
+
               <button className="text-xl px-6 py-3 border border-blue-600 text-blue-600 rounded hover:bg-blue-50 transition duration-300">
                 Learn more
               </button>

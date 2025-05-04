@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const JobCard = ({ title, company, location, salary, type, color }) => (
   <div
@@ -28,14 +29,14 @@ const JobListingPage = () => {
     <div className="min-h-screen bg-gray-100 text-gray-800">
       {/* Navbar */}
       <nav className="bg-black text-white p-4 flex justify-between items-center">
-        <div className="text-2xl font-bold">Injob</div>
-        <div className="hidden md:flex space-x-6 text-4xl">
+        <div className="text-2xl font-bold">InJob</div>
+        <div className="hidden md:flex space-x-6 text-3xl">
           <a href="#" className="hover:underline">
             Find Job
           </a>
-          <a href="#" className="hover:underline">
+          <Link to="/box" className="hover:underline">
             Messages
-          </a>
+          </Link>
           <a href="#" className="hover:underline">
             Hiring
           </a>
@@ -46,7 +47,11 @@ const JobListingPage = () => {
             FAQ
           </a>
         </div>
+
         <div className="flex space-x-4">
+          <Link to="/profile" className="hover:underline">
+            Profile
+          </Link>
           <div className="w-8 h-8 bg-white rounded-full"></div>
         </div>
       </nav>
@@ -81,6 +86,11 @@ const JobListingPage = () => {
               <li>Part Time</li>
               <li>Internship</li>
             </ul>
+            <Link to="/box" className="mt-4 inline-block">
+              <div className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-xl text-center">
+                Help?
+              </div>
+            </Link>
           </div>
         </aside>
 

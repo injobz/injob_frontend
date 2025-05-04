@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../img/logo.png";
 import Profile from "../img/profile.png";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav className="flex justify-between items-center px-8 py-4 shadow-sm bg-gray-10">
@@ -39,7 +40,10 @@ const Navbar = () => {
         </div>
 
         {/* Profile section with menu and avatar */}
-        <div className="relative flex items-center gap-2 cursor-pointer border px-2 py-1 rounded-full">
+        <Link
+          to="/profilr"
+          className="relative flex items-center gap-2 cursor-pointer border px-2 py-1 rounded-full"
+        >
           {/* Menu Icon */}
           <span className="text-3xl text-gray-600">≡</span>
           {/* Avatar */}
@@ -52,7 +56,7 @@ const Navbar = () => {
           <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
             2
           </span>
-        </div>
+        </Link>
       </div>
     </nav>
   );
