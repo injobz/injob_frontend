@@ -120,7 +120,6 @@ const MessagePage = () => {
       </div>
     </div>
   );
-};
-// this is mssg box
+}
 
 export default MessagePage;
