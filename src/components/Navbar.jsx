@@ -35,7 +35,7 @@ const Navbar = () => {
             Login
           </button>
         </Link>
-
+    {/* don't know */}
         {/* Notification Bell with badge */}
         <div className="relative cursor-pointer">
           <span className="text-3xl text-gray-600">🔔</span>
