@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const AuthPage = () => {
   return (
     <div className="flex h-screen font-sans">
-     
+     {/* //h */}
 
       <div className="w-1/2 flex flex-col justify-center items-center px-10">
         <img src={logo} alt="logo" className="w-40 mb-6" />
